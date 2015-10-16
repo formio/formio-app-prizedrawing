@@ -19,7 +19,7 @@ gulp.task('partials', function () {
       quotes: true
     }))
     .pipe($.angularTemplatecache('templateCacheHtml.js', {
-      module: 'formioAppTodo',
+      module: 'formioAppSalesquote',
       root: 'app'
     }))
     .pipe(gulp.dest(conf.paths.tmp + '/partials/'));
@@ -68,9 +68,11 @@ gulp.task('html', ['inject', 'partials'], function () {
 // Only applies for fonts from bower dependencies
 // Custom fonts are handled by the "other" task
 gulp.task('fonts', function () {
-  return gulp.src('bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*')
+  return gulp.src([
+    'bower_components/bootstrap-sass-official/assets/fonts/**/*',
+    'bower_components/font-awesome/fonts/*'
+  ])
     .pipe($.filter('**/*.{eot,svg,ttf,woff,woff2}'))
-    .pipe($.flatten())
     .pipe(gulp.dest(path.join(conf.paths.dist, '/fonts/')));
 });
 
@@ -91,8 +93,7 @@ gulp.task('config', function() {
   return gulp.src([
     path.join(conf.paths.src, '/config.js'),
     path.join(conf.paths.src, '/config.template.js'),
-    path.join(conf.paths.src, '/project.json'),
-    path.join(conf.paths.src, '/export.json')
+    path.join(conf.paths.src, '/project.json')
   ]).pipe(gulp.dest(path.join(conf.paths.dist, '/')));
 });
 
