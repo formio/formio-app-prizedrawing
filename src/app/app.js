@@ -73,7 +73,6 @@
                                 $scope.draw = function() {
                                     $scope.loading = true;
                                     var exportUrl = $rootScope.registerForm + '/export?x-jwt-token=' + Formio.getToken();
-                                    //var exportUrl = './export.json';
                                     var delay = 10;
                                     setTimeout(function() {
                                         $http.get(exportUrl).then(function (response) {
@@ -103,8 +102,8 @@
                 $state
             ) {
                 $rootScope.user = null;
-                $rootScope.adminLoginForm = AppConfig.appUrl + '/admin/login';
-                $rootScope.registerForm = AppConfig.appUrl + '/prize';
+                $rootScope.adminLoginForm = AppConfig.appUrl + '/' + AppConfig.adminLoginPath;
+                $rootScope.registerForm = AppConfig.appUrl + '/' + AppConfig.drawingFormPath;
 
                 // Set the current user if it isn't provided.
                 if (!$rootScope.user) {
