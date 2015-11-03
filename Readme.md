@@ -1,6 +1,6 @@
-Example sales quoting application using Form.io
+Prize drawing using Form.io
 ---------------------------------
-This is an example project that integrates into Form.io.
+This is an prize drawing project that integrates into Form.io.
 
 Installation
 --------------
