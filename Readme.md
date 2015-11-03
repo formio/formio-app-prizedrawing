@@ -8,7 +8,7 @@ You can easily get this application running by typing the following in your comm
 
 ```
 npm install -g formio-cli
-formio bootstrap formio/formio-app-salesquote
+formio bootstrap formio/formio-app-prizedrawing
 ```
 
 This will create a project for you on Form.io as well as configure this application to use your sandboxed project. Feel free to fork and modify as you like.
