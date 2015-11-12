@@ -3,7 +3,7 @@
   "description": "A prize drawing application.",
   "name": "prizedrawing",
   "preview": {
-    "url": "http://formio.github.io/formio-app-prizedrawing",
+    "url": "http://formio.github.io/formio-app-prizedrawing/dist",
     "repo": "https://github.com/formio/formio-app-prizedrawing"
   },
   "roles": {
