@@ -80,6 +80,7 @@
                                             var numEntries = response.data.length;
                                             var pick = Math.floor(Math.random() * numEntries);
                                             $scope.winner = response.data[pick];
+                                            localStorage.setItem('winner', $scope.winner.data.email);
                                         });
                                     }, delay);
                                 };
