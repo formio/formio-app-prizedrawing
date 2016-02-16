@@ -1,6 +1,7 @@
 {
   "title": "Prize Drawing",
   "description": "A prize drawing application.",
+  "version": "1.0.0",
   "name": "prizedrawing",
   "preview": {
     "url": "http://formio.github.io/formio-app-prizedrawing",
@@ -39,7 +40,7 @@
           "inputType": "email",
           "label": "Email",
           "lockKey": true,
-          "key": "admin.email",
+          "key": "email",
           "placeholder": "Enter your email address",
           "prefix": "",
           "suffix": "",
@@ -55,7 +56,7 @@
           "inputType": "password",
           "label": "Password",
           "lockKey": true,
-          "key": "admin.password",
+          "key": "password",
           "placeholder": "Enter your password.",
           "prefix": "",
           "suffix": "",
@@ -233,22 +234,27 @@
     }
   },
   "actions": {
-    "action0": {
-      "title": "Authentication",
-      "name": "auth",
+    "adminLogin": {
+      "name": "login",
+      "title": "Login",
       "form": "adminLogin",
+      "priority": 2,
+      "method": ["create"],
+      "handler": ["before"],
       "settings": {
-        "association": "existing",
-        "password": "admin.password",
-        "username": "admin.email"
-      },
+        "resources": ["admin"],
+        "username": "email",
+        "password": "password"
+      }
+    },
+    "adminLoginNoSubmit": {
+      "name": "nosubmit",
+      "title": "Skip Form Submission",
+      "form": "adminLogin",
       "priority": 0,
-      "method": [
-        "create"
-      ],
-      "handler": [
-        "before"
-      ]
+      "handler": ["before"],
+      "method": ["create"],
+      "settings": {}
     }
   },
   "resources": {
