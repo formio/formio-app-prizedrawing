@@ -1,7 +1,7 @@
 {
   "title": "Prize Drawing",
   "description": "A prize drawing application.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "name": "prizedrawing",
   "preview": {
     "url": "http://formio.github.io/formio-app-prizedrawing",
@@ -234,6 +234,19 @@
     }
   },
   "actions": {
+    "adminRole": {
+      "title": "Role Assignment",
+      "name": "role",
+      "form": "admin",
+      "settings": {
+        "association": "new",
+        "type": "add",
+        "role": "administrator"
+      },
+      "priority": 1,
+      "method": ["create"],
+      "handler": ["after"]
+    },
     "adminLogin": {
       "name": "login",
       "title": "Login",
@@ -246,15 +259,6 @@
         "username": "email",
         "password": "password"
       }
-    },
-    "adminLoginNoSubmit": {
-      "name": "nosubmit",
-      "title": "Skip Form Submission",
-      "form": "adminLogin",
-      "priority": 0,
-      "handler": ["before"],
-      "method": ["create"],
-      "settings": {}
     }
   },
   "resources": {
