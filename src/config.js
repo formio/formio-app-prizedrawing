@@ -1,4 +1,4 @@
-var APP_URL = 'https://yourapp.form.io';
+var APP_URL = 'https://formio.form.io';
 var API_URL = 'https://api.form.io';
 
 // Parse query string
@@ -11,5 +11,5 @@ angular.module('formioPrizeDrawing').constant('AppConfig', {
   appUrl: query.appUrl || APP_URL,
   apiUrl: query.apiUrl || API_URL,
   adminLoginPath: 'admin/login',
-  drawingFormPath: 'prize'
+  drawingFormPath: 'ngconf'
 });
