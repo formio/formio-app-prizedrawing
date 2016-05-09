@@ -11,5 +11,5 @@ angular.module('formioPrizeDrawing').constant('AppConfig', {
   appUrl: query.appUrl || APP_URL,
   apiUrl: query.apiUrl || API_URL,
   adminLoginPath: 'admin/login',
-  drawingFormPath: 'ngconf'
+  drawingFormPath: 'drupalcon'
 });
