@@ -2,18 +2,18 @@
   "name": "formioAppPrizedrawing",
   "version": "1.0.0",
   "dependencies": {
-    "angular-sanitize": "^1.5.0",
-    "jquery": "^2.2.0",
-    "angular-ui-router": "^0.2.18",
-    "angular-bootstrap": "^1.1.2",
-    "moment": "^2.11.2",
-    "animate.css": "~3.5.1",
-    "angular": "^1.5.0",
-    "font-awesome": "~4.5.0",
-    "bootswatch": "^3.3.6+1",
-    "ngmap": "^1.16.7",
-    "bootstrap-sass": "~3.3.6",
-    "ng-formio": "^1.2.1"
+    "angular-sanitize": "^1.5.6",
+    "jquery": "2.2.4",
+    "angular-ui-router": "^0.3.1",
+    "angular-bootstrap": "^1.3.3",
+    "moment": "^2.13.0",
+    "animate.css": "^3.5.2",
+    "angular": "^1.5.6",
+    "font-awesome": "^4.6.3",
+    "bootswatch": "^3.3.6+2",
+    "ngmap": "^1.17.3",
+    "bootstrap-sass": "^3.3.6",
+    "ng-formio": "^1.8.12"
   },
   "devDependencies": {
     "angular-mocks": "~1.4.0"
