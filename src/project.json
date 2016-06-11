@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "name": "prizedrawing",
   "preview": {
-    "url": "http://formio.github.io/formio-app-prizedrawing",
+    "url": "http://formio.github.io/formio-app-prizedrawing/",
     "repo": "https://github.com/formio/formio-app-prizedrawing"
   },
   "roles": {
@@ -32,7 +32,7 @@
       "title": "Admin Login",
       "type": "form",
       "name": "adminLogin",
-      "path": "admin/login",
+      "path": "user/login",
       "components": [
         {
           "input": true,

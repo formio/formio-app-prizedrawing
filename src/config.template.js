@@ -15,6 +15,6 @@ location.search.substr(1).split("&").forEach(function(item) {
 angular.module('formioPrizeDrawing').constant('AppConfig', {
   appUrl: query.appUrl || APP_URL,
   apiUrl: query.apiUrl || API_URL,
-  adminLoginPath: 'admin/login',
+  adminLoginPath: 'user/login',
   drawingFormPath: 'prize'
 });
