@@ -1,7 +1,7 @@
 {
   "title": "Prize Drawing",
   "description": "A prize drawing application.",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "name": "prizedrawing",
   "preview": {
     "url": "http://formio.github.io/formio-app-prizedrawing/",
@@ -285,6 +285,7 @@
       "type": "resource",
       "name": "admin",
       "path": "admin",
+      "tags": ["user"],
       "components": [
         {
           "input": true,
